@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-primary: #262A2F;
+    --color-accent: #FF5533;
+    --color-grey: #696969;
+    --color-white: #FFFFFF;
+
+}
+
+* {
+    all: unset;
+    display: revert;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #EBEBEB;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 101px);
+    gap: 20px;
+
+}
+
+.container {
+    max-width: 1435px;
+    margin: 0 auto;
+}
+.header{
+    margin-bottom: 140px;
+}
+.navigation__logo {
+
+}
+
+.navigation__list {
+    list-style: none;
+    grid-column: 5/-1;
+    display: flex;
+}
+
+.navigation__item {
+    margin-right: 60px;
+
+}
+
+.navigation__item:last-child {
+    margin-right: 0;
+}
+
+.navigation__link {
+    font-size: 24px;
+    color: var(--color-primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navigation__link--active {
+    color: var(--color-accent);
+}
+
+.navigation__link:hover {
+    color: var(--color-accent);
+}
+
+.main-article {
+    display: grid;
+    grid-template-columns: repeat(9, 101px);
+    gap: 20px;
+
+}
+
+.articles__big--column {
+    grid-column: span 9;
+}
+
+.articles__big--small {
+    grid-column: 10/-1;
+}
+
+.main-article__image-container {
+    position: relative;
+    grid-column: span 3;
+    min-height: 185px;
+    max-height: 344px;
+}
+
+.main-article__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.main-article__content {
+    grid-column: 4/-1;
+    padding-right: 63px;
+}
+
+
+.article__category {
+    font-size: 14px;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-article__category {
+    margin-bottom: 7px;
+}
+
+.main-article__title {
+    color: var(--color-primary);
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 34px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.article-source {
+    color: var(--color-grey);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.article__text {
+    color: var(--color-primary);
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 34px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.article-date {
+    color: #F53;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
